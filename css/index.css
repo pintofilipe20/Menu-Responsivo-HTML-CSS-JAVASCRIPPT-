@@ -1,0 +1,126 @@
+/*=Reset do Site(colocar tudo padronizado para se adequar aos demais browsers)*/
+*{
+    margin:0px;
+    padding:0px;
+    font-size: 100%;
+    border:none;
+    outline:none; 
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    background-color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style-type: none;
+}
+/*=======CABEÇALHO=========*/
+.cabecalho{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    background-color: #262844;
+}
+.logo{
+    height: 60px;
+    float: left;
+    font-size: 1.2em;
+   font-weight: 600;
+    color: #da6709;
+    line-height: 3;
+}
+.btn-menu{
+    width: 56px;
+    height: 56px;
+    float: right;
+    text-align: center;
+    color: #ffff;
+    border-radius: 56px;
+    cursor: pointer;
+    background:linear-gradient(to right,#ce2e3c,#da6709);
+
+}
+/*====MENU=====*/
+.menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.btn-close{
+ font-size: 2em;
+ color: #fff;
+ float: right;
+ cursor: pointer;
+ margin-right:7%;
+    margin-top: 5%;
+}
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.menu li{
+    padding: 1.5%;
+}
+.menu li a{
+  font-size: 2em;
+  color: #fff;
+  padding: 1.5% 3%;  
+}
+.menu li a:hover{
+    border:1px solid #da6709;
+}
+/*
+====== Código de Responsividade para Computadores =======
+Aqui começa os códigos para Leptop em diante....
+*/
+@media screen and (min-width: 800px){
+    .cabecalho{
+        padding: .6% 1%;
+    }
+  .btn-menu{
+    display: none;
+  }  
+  .btn-close{
+    display: none;
+  }
+  .menu{
+    width: auto;
+    height: 56px;
+    line-height: 56px;
+    float: right;
+    background-color: #262844;
+    display: block !important;
+    position: static;
+  }
+  .menu li{
+    font-size: 1.2em;
+    padding: 0;
+    float: left;
+  }
+  .menu li a{ 
+    font-size: 1em;
+    padding:12px;
+  } 
+  .menu li a:hover{
+    border:none;
+    color: #da6709;
+  }
+    .logo{
+        line-height: 2;
+        font-size: 1.8em;
+    }
+
+
+}
